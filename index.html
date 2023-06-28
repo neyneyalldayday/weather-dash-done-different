@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Nimble Nimbus</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="./index.html">
+          <img alt="picture of weather logo" src="./assets/Logo.png" class="logo-image" />
+        </a>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="columns">
+          <div class="column is-one-third">
+            <div class="search-bar">
+              <div class="notification">
+                <label for="city-search">Search for a City:</label>
+                <div class="field has-addons">
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="text"
+                      placeholder="Search for a City"
+                      id="city-search"
+                    />
+                  </div>
+                  <div class="control">
+                    <button
+                      type="submit"
+                      class="button is-rounded"
+                      id="search-button"
+                    >
+                      <span class="icon is-small">
+                        <i class="search-button"></i>
+                      </span>
+                      <span>Search</span>
+                    </button>
+                  </div>
+                </div>
+                <p class="is-size-6">Other Cities:</p>
+                <ul id="city-list">
+                  <li><a href="#" class="city-option">London</a></li>
+                  <li><a href="#" class="city-option">New York</a></li>
+                  <li><a href="#" class="city-option">Paris</a></li>
+                  <li><a href="#" class="city-option">Tokyo</a></li>
+                  <li><a href="#" class="city-option">Sydney</a></li>
+                  <li><a href="#" class="city-option">Moscow</a></li>
+                  <li><a href="#" class="city-option">Dubai</a></li>
+                  <li><a href="#" class="city-option">Rio de Janeiro</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="column is-two-thirds  fuck-this">
+            <h1 class="title has-text-centered" id="repo-search-term"></h1>
+            <h1>Todays weather bitch</h1>
+            <div id="current-forecast-container"  class="todays-weather"></div>
+           
+          </div>
+        </div>
+        <h2 class="title has-text-centered">Weekly Forecast</h2>
+        <div id="forecast-container" class="columns is-multiline"></div>
+      </div>
+    </main>
+
+    <script src="./assets/script.js"></script>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>&copy; 2023 The Nimble Nimbus. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+  </html>
